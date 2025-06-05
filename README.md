@@ -37,7 +37,7 @@ print(f"Скачано и распаковано файлов: {len(files)}")
 
 ### Работа с локальными файлами
 
-downloader = Downloader(data_dir='data')
+downloader = Downloader(data_dir='data') 
 files = downloader.get_files(download=False)
 print(f"Найдено локальных .op файлов: {len(files)}")
 

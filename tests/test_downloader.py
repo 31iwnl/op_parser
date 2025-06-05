@@ -30,7 +30,6 @@ class TestDownloader(unittest.TestCase):
         self.assertTrue(result)
         self.assertTrue(os.path.isfile(local_file))
 
-        # Очистка
         os.remove(local_file)
 
     @mock.patch('ftplib.FTP')
