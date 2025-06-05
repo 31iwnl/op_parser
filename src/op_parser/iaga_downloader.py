@@ -2,7 +2,7 @@ import os
 import requests
 import csv
 from datetime import datetime
-from .iaga_parser import IAGA2002Parser  # Импорт парсера из соседнего файла
+from .iaga_parser import IAGA2002Parser
 
 class IAGA2002Downloader:
     def __init__(self, data_dir='data', csv_dir='.'):
