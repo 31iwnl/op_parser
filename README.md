@@ -19,7 +19,7 @@
 
 Установите библиотеку через pip:
 
-pip install op_parser
+pip install op-iaga-parser
 
 ---
 
@@ -27,7 +27,7 @@ pip install op_parser
 
 #### Скачивание и распаковка файлов с FTP
 
-from src.op_parser import Downloader
+from op_parser import Downloader
 
 downloader = Downloader(
 ftp_host='ftp.ncdc.noaa.gov',
@@ -49,7 +49,7 @@ print(f" - {f}")
 
 #### Парсинг Op файлов и сохранение в CSV с конвертацией
 
-from src.op_parser import OpFileParser, safe_float, f_to_c, inch_to_mm, mph_to_mps, mile_to_km
+from op_parser import OpFileParser, safe_float, f_to_c, inch_to_mm, mph_to_mps, mile_to_km
 
 parser = OpFileParser(
 field_converters={
@@ -65,7 +65,7 @@ print("Данные сохранены в test_output.csv")
 
 #### Парсинг файлов формата IAGA-2002
 
-from src.op_parser import IAGA2002Downloader
+from op_parser import IAGA2002Downloader
 
 downloader = IAGA2002Downloader(data_dir='data')
 
